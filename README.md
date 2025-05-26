@@ -41,11 +41,12 @@ CREATE TABLE rangers (
 ```
 
 টেবিলে প্রাইমারি কি-এর উদাহারণঃ
-| ranger_id | name             | region         |
-|-----------|------------------|--------------- |
-| 1         | Alice Green      | Northern Hills |
-| 2         | Bob White        | River Delta    |
-| 3         | Carol King       | Mountain Range |
+| `ranger_id` | `name`             | `region`         |
+|-------------|--------------------|----------------- |
+| 1           | Alice Green        | Northern Hills   |
+| 2           | Bob White          | River Delta      |
+| 3           | Carol King         | Mountain Range   |
+
 এখানে ranger_id হলো প্রাইমারি কি, যা প্রতিটি রো-কে নির্দিষ্ট ভাবে চিহ্নিত করতে সক্ষম।
 
 ### ফরেন কী (Foreign Key)
@@ -61,13 +62,12 @@ CREATE TABLE sightings (
 ```
 
 টেবিলে ফরেন কি-এর উদাহারণঃ
-| sighting_id | ranger_id | location          |
-|-------------|-----------|-------------------|
-| 1           | 1         | Peak Ridge        |
-| 2           | 2         | Bankwood Area     |
-| 3           | 3         | Bamboo Grove East |
-| 4           | 2         | Snowfall Pass     |
-
+| `sighting_id` | `ranger_id` | `location`          |
+|---------------|-------------|---------------------|
+| 1             | 1           | Peak Ridge          |
+| 2             | 2           | Bankwood Area       |
+| 3             | 3           | Bamboo Grove East   |
+| 4             | 2           | Snowfall Pass       |
 
 এখানে ranger_id হলো ফরেন কী, যা rangers টেবিলের ranger_id প্রাইমারি কি-কে রেফার করে। যা sightings টেবিলের সাথে rangers টেবিলের মধ্যে সম্পর্ক স্থাপন করে।
 
