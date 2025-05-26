@@ -59,6 +59,7 @@ CREATE TABLE sightings (
     location VARCHAR(100) NOT NULL
 );
 ```
+
 টেবিলে ফরেন কি-এর উদাহারণঃ
 | sighting_id | ranger_id | location          |
 |-------------|-----------|-------------------|
@@ -67,8 +68,8 @@ CREATE TABLE sightings (
 | 3           | 3         | Bamboo Grove East |
 | 4           | 2         | Snowfall Pass     |
 
-এখানে ranger_id হলো ফরেন কী, যা rangers টেবিলের ranger_id প্রাইমারি কি-কে রেফার করে। যা sightings টেবিলের সাথে rangers টেবিলের মধ্যে সম্পর্ক স্থাপন করে।
 
+এখানে ranger_id হলো ফরেন কী, যা rangers টেবিলের ranger_id প্রাইমারি কি-কে রেফার করে। যা sightings টেবিলের সাথে rangers টেবিলের মধ্যে সম্পর্ক স্থাপন করে।
 
 ## 4. What is the difference between the VARCHAR and CHAR data types?
 ### VARCHAR
